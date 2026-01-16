@@ -1,13 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    });
+const movingSection = document.querySelector('.move-down');
 
-    document.querySelectorAll(".fade-in").forEach((section) => {
-        observer.observe(section);
-    });
-})
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    movingSection.style.transform = `translateY(${scrollY * 0.2}px)`;
+});
