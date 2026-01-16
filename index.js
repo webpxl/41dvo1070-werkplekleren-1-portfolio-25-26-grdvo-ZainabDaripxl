@@ -1,9 +1,13 @@
-function toggleText() {
-    const tekst = document.getElementById("over-mij");
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    });
 
-    if (tekst.style.display === "none") {
-        tekst.style.display = "block";
-    } else {
-        tekst.style.display = "none";
-    }
-}
+    document.querySelectorAll(".fade-in").forEach((section) => {
+        observer.observe(section);
+    });
+})
