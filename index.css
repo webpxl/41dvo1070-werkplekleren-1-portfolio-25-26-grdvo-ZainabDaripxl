@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background: #c7a6b8;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.year {
+    position: absolute;
+    right: 570px;
+    top: 130px;
+    transform: rotate(90deg);
+}
+
+.profile {
+    display: flex;
+    background: #c7a6b8;
+    border-radius: 20px;
+    width: 800px;
+    margin-right: 300px;
+    margin-left: 350px;
+    margin-top: 100px ;
+    margin-bottom: 100px ;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    text-align: center;
+
+}
+
+.education, .contact {
+    background: #c7a6b8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.software {
+    background: #c7a6b8;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 100px ;
+    margin-bottom: 100px ;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+
+}
+
+
+
+
+
+.projects img {
+
+        width: 500px;
+        height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+
+.projects {
+    /* De 'doos' waar alle foto's in zitten */
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+}
+
+.skills-box {
+    background-color: #a890a8; /* De paarse kleur uit je foto */
+    display: flex;             /* Zet de kolommen naast elkaar */
+    justify-content: space-around; /* Zorgt voor ruimte tussen de kolommen */
+    padding: 40px;             /* Ruimte binnenin het vak */
+    border-radius: 50px;       /* Maakt de grote ronde hoeken */
+    margin: 20px auto;         /* Centreert het vak op de pagina */
+    max-width: 900px;          /* Zodat het vak niet over het hele scherm gaat */
+    color: white;              /* Tekstkleur */
+}
+
+.skills-column h3 {
+    font-family: serif;        /* Voor die klassieke letterstijl */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.skills-column ul {
+    list-style-type: disc;     /* De witte bolletjes */
+    padding-left: 20px;
+}
+
+.skills-column li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
